@@ -16,7 +16,7 @@ namespace Composite
 
             var childBox = new CompositeGift("ChildBox", 0);
             childBox.AddGift(new Gift("Game", 3000));
-            childBox.AddGift(new Gift("mini car", 9000));
+            childBox.AddGift(new Gift("Mini Car", 9000));
 
             var specialBox = new CompositeGift("MiniBox", 0);
             specialBox.AddGift(new Gift("Computer", 1000));
@@ -27,6 +27,8 @@ namespace Composite
             root.AddGift(childBox);
 
             root.AddGift(new Gift("Ball", 909090));
+
+            root.Display(1);
 
             Console.WriteLine($"Nessa caixa de brinquedos há um total de: {root.CountGift()}");
             Console.WriteLine($"O valor total gasto nesses presentes foi: {root.TotalPrice()}");

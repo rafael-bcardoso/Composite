@@ -45,5 +45,13 @@ namespace Composite
 
             return totalPrice;
         }
+
+        public override void Display(int depth)
+        {
+            foreach (var gift in _gifts)
+            {
+                gift.Display(depth + 2);
+            }
+        }
     }
 }

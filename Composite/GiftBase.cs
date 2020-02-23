@@ -14,5 +14,6 @@
         public abstract decimal TotalPrice();
         
         public abstract int CountGift();
+        public abstract void Display(int depth);
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Composite
+﻿using System;
+
+namespace Composite
 {
     public class Gift : GiftBase
     {
@@ -11,6 +13,11 @@
         public override int CountGift()
         {
             return 1;
+        }
+
+        public override void Display(int depth)
+        {
+            Console.WriteLine(new String('-', depth) + this.Name);
         }
 
         public override decimal TotalPrice()
