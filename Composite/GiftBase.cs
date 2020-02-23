@@ -12,8 +12,7 @@
         protected decimal Price { get; private set; }
 
         public abstract decimal TotalPrice();
-        public abstract void RemoveGift();
-        public abstract void AddGift();
+        
         public abstract int CountGift();
     }
 }
