@@ -2,7 +2,7 @@
 {
     public interface IGiftOperations
     {
-        void RemoveGift();
-        void AddGift();
+        void RemoveGift(GiftBase gift);
+        void AddGift(GiftBase gift);
     }
 }
